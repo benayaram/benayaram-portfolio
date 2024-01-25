@@ -1,0 +1,73 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merienda:wght@300&family=Titillium+Web:ital,wght@1,300&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff; /* White background */
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.angle-brackets {
+  color: #ff9900; /* Color for the angle brackets */
+  font-size: 2em; /* Increase the font size for the angle brackets */
+  font-family: 'Merienda'; /* Change the font family */
+  padding-right: 10px; /* Add right padding for the angle brackets */
+}
+
+.brand-name {
+  color: #3366cc; /* Color for the brand name */
+  font-size: 2em; /* Increase the font size for the brand name */
+  font-family: 'Merienda';
+  font-weight: bold; /* Adjust the font weight */
+  margin: 0 5px; /* Add spacing between the brand name and angle brackets */
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #3366cc; /* 20% blue */
+  font-family: 'Titillium Web'; /* Change the font family */
+  font-size: 1.5em; /* Increase the font size for the links */
+  transition: color 0.3s ease; /* Add a smooth transition for color changes */
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus {
+  color: #ff9900; /* Change the color on hover, active, or focus */
+}
+.right{display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px;
+    text-align: center; /* Center the text on smaller screens */
+    width: 100%; /* Make the links full width */
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center; /* Center the text on smaller screens */
+    width: 100%; /* Make the links full width */
+
+  }
+  .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

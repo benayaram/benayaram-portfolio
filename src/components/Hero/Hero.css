@@ -1,0 +1,143 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    height: 83vh; /* Set the height to 100% of the viewport height */
+    /* Use responsive units for padding */
+}body {
+    overflow: auto;
+}
+
+
+.text-content {
+    width: 50%;
+    display: flex;
+    margin: 2em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-content h1 {
+    font-size: 3em;
+    /* Adjusted font size for the heading */
+    font-family: 'Arial', sans-serif;
+    /* Change the font family for the heading */
+    color: #333;
+    /* Change the color for the heading */
+    margin-bottom: 12px;
+}
+
+.text-content p {
+    font-size: 1.5em;
+    /* Adjusted font size for the paragraph */
+    font-family: 'Verdana', sans-serif;
+    /* Change the font family for the paragraph */
+    color: #666;
+    /* Change the color for the paragraph */
+    margin: 0; /* Remove margin to eliminate space between paragraphs */
+}
+h1{
+    margin-bottom: 12px;
+}
+
+.current-role-container {
+    overflow: hidden;
+}
+
+.current-role {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 5px;
+    font-size: 1.5em;
+    /* Adjusted font size for the roles text */
+    font-family: 'Georgia', serif;
+    /* Change the font family for the roles text */
+    color: #444;
+    /* Change the color for the roles text */
+    animation: slideIn 3s forwards;
+    /* Adjusted timing for changing roles */
+}
+
+@keyframes slideIn {
+    0%,
+    100% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.text-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Add margin to separate the list from the text */
+}
+
+.text-content li {
+    font-size: 1.2em;
+    /* Adjusted font size for list items */
+    font-family: 'Georgia', serif;
+    /* Change the font family for list items */
+    color: #444;
+    /* Change the color for list items */
+    margin: 5px 0;
+    /* Added margin for better spacing */
+}
+
+.image-content {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.image-content img {
+    width: 50%;
+    /* Set the image width to fill its container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border-radius: 8px;
+    /* Apply border-radius */
+}
+
+/* Add a media query for smaller screens if needed */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content,
+    .image-content {
+        width: 100%;
+    }
+}
+.buttons-container {
+    display: flex;
+    margin-top: 20px; /* Add margin for spacing between roles and buttons */
+}
+
+.action-button, .github-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add smooth transitions */
+}
+
+.action-button:hover, .github-button:hover {
+    background-color: #ffffff; /* Gold color on hover */
+    color: #444; /* White text color on hover */
+    border: 2px solid #FFD700; /* Gold border on hover */
+}
+
+.github-button {
+    background-color: gold; /* GitHub button specific background color */
+    color: #444; /* Gold text color */
+    border: 2px solid #FFD700; /* Gold border color */
+}
