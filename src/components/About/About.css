@@ -1,0 +1,77 @@
+/* About.css */
+.about-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text for mobile and tablet screens */
+  width: 90%; /* Adjust as needed */
+  max-width: 1200px; /* Set a maximum width for content */
+}
+
+.text-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-container h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.text-container:hover h2 {
+  color: #ff9900;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #ff9900;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    flex-direction: row;
+    text-align: left; /* Left-align text for desktop screens */
+  }
+
+  .text-container {
+    width: 60%;
+    margin-bottom: 0;
+    text-align: left; /* Left-align text for desktop screens */
+  }
+
+  .image-container {
+    width: 40%;
+  }
+}

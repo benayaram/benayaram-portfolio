@@ -4,6 +4,7 @@ import './Hero.css';
 import Profilepic from "../../assects/Benayaram Rekha.png";
 
 const Hero = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const roles = ['Web Developer', 'Android Developer', 'UI Designer', 'Editor', 'Photographer'];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 

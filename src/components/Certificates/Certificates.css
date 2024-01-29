@@ -1,0 +1,110 @@
+/* Certificates.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merienda:wght@300&family=Titillium+Web:ital,wght@1,300&display=swap');
+
+.certifications-section {
+    display: flex;
+    justify-items: center;
+    padding: 20px;
+    background-color: #001f3f;
+    color: #FFD700;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certifications-text {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Merienda';
+    text-shadow: 0 0px 20px #00bfff;}
+
+.certificates-rows {
+    display: flex;border: #FFD700;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificates-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.certificate {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.certificate-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 1s ease;
+}
+
+.certificate:hover .certificate-image {
+    transform: rotateX(45deg);
+}
+
+.certificate-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #001f3fc2;
+    border-radius: 8px;
+    transform: rotateX(50deg);
+    transition: transform 1s ease;
+    opacity: 0;
+}
+
+.certificate:hover .certificate-details {
+    transform: rotateX(10deg);
+    opacity: 1;
+}
+
+.certificate-details h3,
+.certificate-details p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.certificate-details h3 {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+}
+
+.certificate-details p {
+    font-size: 0.7em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .certificates-row {
+        flex-direction: column;
+    }
+
+    .certificate {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .certifications-section {
+        height: max-content;
+    }
+}

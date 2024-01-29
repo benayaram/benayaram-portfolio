@@ -1,0 +1,97 @@
+/* Skills.css */
+
+/* Styles for Desktop Screens */
+.skills-section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #001f3f;
+    color: #FFD700;
+    flex-wrap: wrap;
+}
+
+.skill-container-left,
+.skill-container-middle,
+.skill-container-right {
+    width: 20%;
+    text-align: center;
+}
+
+.skill-container-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-image {
+    width: 70px;
+    border-radius: 8px;
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #37474f;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.inner-progress-bar {
+    height: 100%;
+    background-color: #FFD700;
+}
+
+.percentage {
+    position: static;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.skills-text {
+    text-align: center;
+}
+
+.skills-text h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-section {
+        min-height: 60vh;
+        padding: 20px;
+    }
+
+    .skill-container-left,
+    .skill-container-middle,
+    .skill-container-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
