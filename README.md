@@ -2,6 +2,8 @@
 # Benayaram's Portfolio
 
 ## About Me
+![logo](https://github.com/user-attachments/assets/6d6a9849-1794-4221-bc01-3e4c4bb57b2f)
+
 
 Hello! I'm Benayaram, a passionate and creative individual with a background in web development, Android development, UI design, editing, and photography. I love bringing ideas to life through technology and design.
 
